@@ -2,7 +2,6 @@ function organizeFn(dirPath){
     let destPath;
     if(dirPath == undefined){
         console.log("Kindly enter the path");
-        //destPath = process.cwd();
         return;
     } else{
         let doesExist = fs.existsSync(dirPath);
