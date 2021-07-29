@@ -1,8 +1,13 @@
+
+let inputArr = process.argv.slice(2);
+
+let fs = require("fs");
+let path = require("path");
+
 let helpObj = require("./command/help");
 let treeObj = require("./command/tree");
 let organizeObj = require("./command/organize");
 
-let inputArr = process.argv.slice(2);
 let command = inputArr[0];
 let types = {
     media: ["mp4","mkv"],
